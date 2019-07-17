@@ -1,0 +1,41 @@
+{
+  "name": "vue-chat-scroll-image",
+  "version": "1.0.0",
+  "description": "Automatic, yet conditional, scroll-to-bottom directive for Vue.js 2.0, images loaded and tigger scroll down",
+  "main": "dist/vue-chat-scroll-image.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamuelLin/vue-chat-scroll-image.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SamuelLin/vue-chat-scroll-image/issues"
+  },
+  "homepage": "https://github.com/SamuelLin/vue-chat-scroll-image#readme",
+  "keywords": [
+    "vue",
+    "vue-directive",
+    "scroll",
+    "autoscroll",
+    "chat",
+    "room",
+    "top-load",
+    "image",
+    "image loaded",
+    "lazyload"
+  ],
+  "author": "Samuel Lin",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^2.4.4"
+  },
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "rollup": "^0.41.6",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-commonjs": "^8.0.2"
+  }
+}
