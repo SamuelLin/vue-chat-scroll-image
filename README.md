@@ -6,6 +6,8 @@ Forked from
 
 Added new feature trigger scroll down when image messages loaded.
 
+[![Edit Vue Template](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vue-template-izy3s?fontsize=14)
+
 ## Installation
 
 - #### NPM / Yarn
@@ -51,7 +53,7 @@ Alternatively, you can pass a config value to the directive:
 #### Scroll when images loaded
 
 ``` html
-<ul class="messages" v-chat-scroll={ image: true }>
+<ul class="messages" v-chat-scroll="{ image: true }">
   <li class="message" v-for="n in messages">
     <img src="IMAGE PATH" />
   </li>
