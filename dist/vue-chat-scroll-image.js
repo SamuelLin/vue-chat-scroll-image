@@ -27,8 +27,12 @@ var imageLoaded = function imageLoaded(src) {
 
   if (typeof callback !== 'function' || typeof src !== 'string' || !src) return;
   var image = new Image();
-  image.onload = callback;
   image.src = src;
+  if (image.complete) {
+    callback();
+  } else {
+    image.onload = callback;
+  }
 };
 
 var emit = function emit(vnode, name, data) {
@@ -72,7 +76,7 @@ var vScrollDown = {
             var imgs = node.querySelectorAll('img');
             imgs.forEach(function (img) {
               imageLoaded(img.getAttribute('src'), function () {
-                !scrolled && scrollToBottom(el, config.smooth);
+                scrollToBottom(el, config.smooth);
               });
             });
           });
