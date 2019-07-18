@@ -19,8 +19,12 @@ const scrollToBottom = (el, smooth) => {
 const imageLoaded = (src, callback = () => {}) => {
   if (typeof callback !== 'function' || (typeof src !== 'string' || !src)) return;
   const image = new Image();
-  image.onload = callback;
   image.src = src;
+  if (image.complete) {
+    callback();
+  } else {
+    image.onload = callback;
+  }
 }
 
 const emit = (vnode, name, data) => {
