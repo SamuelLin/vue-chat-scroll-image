@@ -1,6 +1,6 @@
 {
   "name": "vue-chat-scroll-image",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Automatic, yet conditional, scroll-to-bottom directive for Vue.js 2.0, images loaded and tigger scroll down",
   "main": "dist/vue-chat-scroll-image.js",
   "scripts": {
